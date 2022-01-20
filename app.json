@@ -1,5 +1,10 @@
 {
   "expo": {
+    "facebookScheme": "fb1351643871942303",
+    "facebookAppId": "1351643871942303",
+    "facebookAutoLogAppEventsEnabled": false,
+    "facebookAdvertiserIDCollectionEnabled": false,
+    "facebookDisplayName": "RTAppTestProject",
     "name": "RTAppTestProject",
     "slug": "RTAppTestProject",
     "version": "1.0.0",

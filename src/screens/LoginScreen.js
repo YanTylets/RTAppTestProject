@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { loginUser } from '../api/auth-api';
 import Background from '../components/Background';
 import FacebookSignIn from '../components/FacebookSignIn';
@@ -35,6 +35,10 @@ const LoginScreen = ({navigation}) => {
   
     return (
             <Background>
+            <Image 
+            source={require('../../assets/rn-social-logo.png')}
+            style={styles.logo}
+            />
             <MyHeader text='Connect'/>
           <MyInput 
             name='Email' 
@@ -79,6 +83,10 @@ const LoginScreen = ({navigation}) => {
 };
 
 const styles = StyleSheet.create ({
+  logo: {
+    width:200,
+    height: 200
+  },
   register__container: {
     width:'100%',
     flexDirection:'row',

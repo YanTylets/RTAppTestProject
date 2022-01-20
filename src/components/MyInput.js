@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TextInput } from 'react-native-paper';
 import { StyleSheet, Text, View} from 'react-native';
 
@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
     container: {
       alignItems: 'center',
       width: '100%',
-      justifyContent: 'center'
+      justifyContent: 'center',
     },
     input: {
         width:'100%',
         height: 55,
         flexDirection: 'row',
         backgroundColor: '#F0F8FF',
-        marginBottom: 20
+        marginBottom: 20, 
     },
     description: {
       fontSize: 13,

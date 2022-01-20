@@ -1,9 +1,9 @@
 
-import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "../core/config";
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+export const auth = getAuth(app);
 
 export async function signUpUser({ name, email, password }) {
     try {
@@ -29,4 +29,8 @@ export async function loginUser({ email, password }) {
             error: error.message
         }
     }
+}
+
+export function logoutUser() {
+    signOut(auth)
 }
